@@ -7,103 +7,69 @@
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
-  <title>Document</title>
+  />
+  <title>My Portfolio</title>
+  <style>
+  
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+    .button {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .social-icon {
+      transition: transform 0.3s ease;
+    }
+  </style>
 </head>
-<body class="bg-[#4E5859]">
-  <main class="">
-    <div class="overlay w-screen ">
-      <header class="h-screen w-screen ">
-        <nav class="flex px-6 py-4 b  bg-gray-800 items-center justify-between">
-          <div class="text-white text-2xl font-bold sm:text-2xl">
+<body class="bg-[#4E5859]  ">
+  <main>
+    <div class="overlay w-screen">
+      <header class="h-screen w-screen">
+        <nav class="flex px-6 py-4 bg-gray-800 items-center justify-between">
+          <div class="text-white text-2xl font-bold sm:text-xl">
             My Portfolio
           </div>
-          <ul class="flex space-x-6 text-white font-medium">
-            <li><a href="#Home" class="hover:text-blue-300">Home</a></li>
-            <li><a href="#about" class="hover:text-blue-300">About</a></li>
-            <li><a href="#projects" class="hover:text-blue-300"> Projects</a></li>
-            <li><a href="#blog" class="hover:text-blue-300">Blog</a></li>
-            
-           
-           
-            <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+          <ul class="hidden md:flex space-x-6 text-white font-medium">
+            <li><a href="#Home" class="nav-link hover:text-blue-300">Home</a></li>
+            <li><a href="#about" class="nav-link hover:text-blue-300">About</a></li>
+            <li><a href="#projects" class="nav-link hover:text-blue-300">Projects</a></li>
+            <li><a href="#blog" class="nav-link hover:text-blue-300">Blog</a></li>
+            <li><a href="#contact" class="nav-link hover:text-blue-300">Contact</a></li>
           </ul>
-          <div class="links text-white flex gap-2"> 
-            <i class="ri-linkedin-fill text-2xl cursor-pointer "></i>
-            <i class="ri-github-fill text-2xl cursor-pointer"></i>
-            <i class="ri-message-2-line text-2xl cursor-pointer "></i>
-
+          <div class="links text-white flex gap-4">
+            <i class="ri-linkedin-fill text-2xl cursor-pointer social-icon hover:scale-110"></i>
+            <i class="ri-github-fill text-2xl cursor-pointer social-icon hover:scale-110"></i>
+            <i class="ri-message-2-line text-2xl cursor-pointer social-icon hover:scale-110"></i>
           </div>
         </nav>
 
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:px-6">
+          <div class="text-white sm:w-1/2">
+            <h2 class="text-xl mb-2">Hello...</h2>
+            <h1 class="text-5xl mb-4">I'm <span class="text-6xl font-bold">Ayush Dubey</span></h1>
+            <h3 class="text-xl mb-4">A Passionate Web Developer</h3>
+            <h2 class="text-2xl">Crafting functional, user-friendly, and visually stunning websites.</h2>
+            <div class="mb-4 mt-4">
+              <button class="button text-lg bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-600">View My Work</button>
+              <button class="button text-lg bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-600">Hire Me</button>
+            </div>
 
-        <div class="w-full sm:flex sm:justify-between sm:p-6">
-          <div class="sm:w-[50%] text-white">
-
-
-          <h2 class=" text-xl mb-2 "> Hello...</h2>
-          <h1 class=" text-5xl mb-4 "> I'm <span class=" text-6xl font-bold"> Ayush  Dubey</span> </h1>
-          <h3 class=" text-xl mb-4"> A Passionate Web Developer"</h3>
-          <h2 class=" text-2xl">Crafting functional, user-friendly, and visually stunning websites.</h2>
-          <div class=" mb-4 mt-4">
-            <button class=" text-lg  bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-500"> View My work </button>
-            <button class=" text-lg  bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-500"> Hire me </button>
+            <div class="flex flex-col gap-4 mt-4 hidden sm:block">
+              <h4 class="text-2xl font-bold">About Me:</h4>
+              <p class="text-lg mt-4 text-gray-200">I’m a dedicated web developer with a knack for turning complex problems into simple, beautiful, and intuitive solutions. With a strong foundation in front-end and back-end development, I specialize in creating seamless digital experiences that leave a lasting impression. When I’m not coding, I’m exploring the latest tech trends to keep my skills sharp.</p>
+            </div>
           </div>
 
-               <!-- ------------------------------------- -->
-        <div class=" flex flex-col gap-4 mt-4 hidden sm:block">
-          <h4 class="text-2xl font-bold">About Me :- </h4>
-          <p class="text-lg mt-4 "  >I’m a dedicated web developer with a knack for turning complex problems into simple, beautiful, and intuitive solutions. With a strong foundation in front-end and back-end development, I specialize in creating seamless digital experiences that leave a lasting impression. When I’m not coding, I’m exploring the latest tech trends to keep my skills sharp.</p>
-       </div>
+          <div class="h-[70vh] sm:w-1/2">
+            <img class="w-full h-full object-contain object-top rounded-md shadow-lg" src="hero.jpg" alt="Hero Image">
+          </div>
+
+          <div class="flex flex-col gap-4 mt-4 sm:hidden text-white">
+            <h4 class="text-2xl font-bold">About Me:</h4>
+            <p class="text-lg text-gray-200">I’m a dedicated web developer with a knack for turning complex problems into simple, beautiful, and intuitive solutions. With a strong foundation in front-end and back-end development, I specialize in creating seamless digital experiences that leave a lasting impression. When I’m not coding, I’m exploring the latest tech trends to keep my skills sharp.</p>
+          </div>
         </div>
-   
-   
-         
-          <!-- -------------------------- -->
-           <div class=" h-[70vh]">
-            <img class=" w-full h-full object-contain object-top w-80 rounded-md shadow shadow-gray-50 " src="hero.jpg" alt="">
-
-           </div>
-
-
-           <!-- About -->
-
-           <div class=" flex flex-col gap-4 mt-4 sm:hidden">
-            <h4 class="text-2xl font-bold">About Me :- </h4>
-            <p class="text-lg "  >I’m a dedicated web developer with a knack for turning complex problems into simple, beautiful, and intuitive solutions. With a strong foundation in front-end and back-end development, I specialize in creating seamless digital experiences that leave a lasting impression. When I’m not coding, I’m exploring the latest tech trends to keep my skills sharp.</p>
-         </div>
-        </div>
-
-        <!-- <div class="hero px-6 py-2 h-96 w-screen  ">
-
-       <div class="left text-white  py-12  w-[70%] sm:flex sm:justify-between   text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-      <div class="">
-        <h2 class=" text-xl mb-2"> Hello...</h2>
-        <h1 class=" text-5xl mb-4"> I'm <span class=" text-6xl font-bold"> Ayush  Dubey</span> </h1>
-        <h3 class=" text-2xl mb-4"> A Passionate Web Developer"</h3>
-        <h2 class=" text-3xl">Crafting functional, user-friendly, and visually stunning websites.</h2>
- 
-      </div>
-
-       <div class="cta flex gap-4 py-6">
-        <button class=" text-lg  bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-500"> View My work </button>
-        <button class=" text-lg  bg-gray-800 py-2 px-4 rounded-md hover:bg-gray-500"> Hire me </button>
-       </div>
-
-
-       <div class="right px-4 h-[90vh ] py-8 ">
-        <img class=" object-cover w-96  rounded-md shadow shadow-gray-50 " src="hero.jpg" alt="">
-       </div>
-
-
-    <div class="about   flex flex-col gap-4 mt-4">
-       <h4 class="text-2xl font-bold">About Me :- </h4>
-       <p class="text-lg "  >I’m a dedicated web developer with a knack for turning complex problems into simple, beautiful, and intuitive solutions. With a strong foundation in front-end and back-end development, I specialize in creating seamless digital experiences that leave a lasting impression. When I’m not coding, I’m exploring the latest tech trends to keep my skills sharp.</p>
-    </div>
-      
-       </div>
-     
-        </div> -->
       </header>
     </div>
   </main>
